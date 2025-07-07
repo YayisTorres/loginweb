@@ -1,0 +1,155 @@
+/* ===== Estilos para la sección de contador ===== */
+.counter-section {
+  background-color: #f5f1e8;
+  padding: 60px 20px;
+  margin: 40px 0;
+}
+
+/* Contenedor de contadores */
+.counter-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 40px;
+  align-items: center;
+}
+
+/* Tarjeta individual de contador */
+.counter-item {
+  text-align: center;
+  padding: 20px;
+  transition: transform 0.3s ease;
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.6s ease;
+}
+
+/* Animación al entrar */
+.counter-item.animate {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Animación escalonada */
+.counter-item:nth-child(1).animate { transition-delay: 0.1s; }
+.counter-item:nth-child(2).animate { transition-delay: 0.2s; }
+.counter-item:nth-child(3).animate { transition-delay: 0.3s; }
+.counter-item:nth-child(4).animate { transition-delay: 0.4s; }
+
+/* Efecto al pasar mouse */
+.counter-item:hover {
+  transform: translateY(-5px);
+}
+
+/* Ícono dentro del contador */
+.counter-icon {
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Estilo base de íconos SVG */
+.counter-icon svg {
+  width: 60px;
+  height: 60px;
+  fill: #a0522d; /* café tostado */
+  transition: transform 0.3s ease, fill 0.3s ease;
+}
+
+/* Hover sobre ícono */
+.counter-item:hover .counter-icon svg {
+  transform: scale(1.1);
+  fill: #d2691e; /* caramelo */
+}
+
+/* Contenido numérico */
+.counter-content {
+  position: relative;
+}
+
+/* Número grande */
+.counter-number {
+  font-size: 3rem;
+  font-weight: 700;
+  color: #666;
+  font-family: 'Segoe UI', sans-serif;
+  line-height: 1;
+  display: inline-block;
+}
+
+/* Símbolo de suma */
+.counter-plus {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #666;
+  margin-left: 2px;
+}
+
+/* Descripción bajo el número */
+.counter-label {
+  font-size: 1.1rem;
+  color: #CD853F;
+  margin-top: 10px;
+  margin-bottom: 0;
+  font-weight: 500;
+  line-height: 1.3;
+}
+
+/* Efecto de pulso para número animado */
+.counter-number.counting {
+  animation: pulse 0.15s ease-in-out;
+}
+
+/* Keyframes para efecto pulso cálido */
+@keyframes pulse {
+  0% { transform: scale(1); color: #8b4513; }
+  50% { transform: scale(1.08); color: #d2691e; }
+  100% { transform: scale(1); color: #8b4513; }
+}
+
+/* Responsive tablets */
+@media (max-width: 768px) {
+  .counter-section {
+    padding: 40px 15px;
+  }
+
+  .counter-container {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+  }
+
+  .counter-number {
+    font-size: 2.5rem;
+  }
+
+  .counter-plus {
+    font-size: 2rem;
+  }
+
+  .counter-label {
+    font-size: 1rem;
+  }
+
+  .counter-icon svg {
+    width: 50px;
+    height: 50px;
+  }
+}
+
+/* Responsive móviles */
+@media (max-width: 480px) {
+  .counter-container {
+    grid-template-columns: 1fr;
+    gap: 25px;
+  }
+
+  .counter-number {
+    font-size: 2.2rem;
+  }
+
+  .counter-plus {
+    font-size: 1.8rem;
+  }
+}

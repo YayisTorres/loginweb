@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Cafetería El Rincón</title>
+  <!-- Enlace al archivo CSS -->
+  <link rel="stylesheet" href="./css/carrusel.css">
+  <link rel="stylesheet" href="./css/cards.css">
+  <link rel="stylesheet" href="./css/counter.css">
+</head>
+<body>
+  <!-- Encabezado principal con nombre y menú de navegación -->
+  <header>
+    <h1>Cafetería El Rincón</h1>
+    <nav>
+      <a href="#">Inicio</a>
+      <a href="#">Menú</a>
+      <a href="#">Nosotros</a>
+      <a href="#">Contacto</a>
+    </nav>
+  </header>
+
+  <!-- Sección del carrusel de productos destacados -->
+  <section class="carrusel">
+    <div class="slider">
+      <!-- Slide 1 -->
+      <div class="slide active">
+        <img src="./img/capucchino cpn espuma.jpg" alt="Café con espuma">
+        <div class="texto-slide">
+          <h2>Café con espuma</h2>
+          <p>Suave y cremoso</p>
+        </div>
+      </div>
+      <!-- Slide 2 -->
+      <div class="slide">
+        <img src="./img/capuchino con imagen de hoja.jpg" alt="Capuchino">
+        <div class="texto-slide">
+          <h2>Capuchino</h2>
+          <p>Perfecto para las tardes</p>
+        </div>
+      </div>
+      <!-- Slide 3 -->
+      <div class="slide">
+        <img src="./img/molletas.webp" alt="Frappe de Cajeta">
+        <div class="texto-slide">
+          <h2>Frappe de Cajeta</h2>
+          <p>Refrescante y delicioso</p>
+        </div>
+      </div>
+    </div>
+    <!-- Botones para controlar el carrusel -->
+    <button class="btn-prev">&#10094;</button>
+    <button class="btn-next">&#10095;</button>
+  </section>
+<section class="counter-section" id="counter-section">
+  <div class="counter-container">
+
+    <!-- Contador 1: Tazas Servidas -->
+    <div class="counter-item">
+      <div class="counter-icon">
+        <svg width="60" height="60" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+          <path d="M2 21h20v-2H2v2zM20 8H4V6c0-1.1.9-2 2-2h12c1.1 0 2 .9 2 2v2zM18 10.5V19c0 .6-.4 1-1 1H7c-.6 0-1-.4-1-1v-8.5c0-.8.7-1.5 1.5-1.5h9c.8 0 1.5.7 1.5 1.5z"/>
+          <circle cx="18.5" cy="11.5" r="2.5" stroke="currentColor" stroke-width="2" fill="none"/>
+        </svg>
+      </div>
+      <div class="counter-content">
+        <span class="counter-number" data-target="1000">0</span>
+        <span class="counter-plus">+</span>
+        <p class="counter-label">Tazas Servidas</p>
+      </div>
+    </div>
+
+    <!-- Contador 2: Clientes Felices -->
+    <div class="counter-item">
+      <div class="counter-icon">
+        <svg width="60" height="60" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+          <path d="M16 4c0-1.11.89-2 2-2s2 .89 2 2-.89 2-2 2-2-.89-2-2zM4 18v-6h3v6h2v-7.5c0-1.1.9-2 2-2h2c1.1 0 2 .9 2 2V18h2v-6h3v6h2v-6.5c0-1.1-.9-2-2-2h-1V8c0-1.1-.9-2-2-2h-6c-1.1 0-2 .9-2 2v1.5H4c-1.1 0-2 .9-2 2V18h2z"/>
+          <circle cx="6" cy="6" r="2"/>
+          <circle cx="12" cy="6" r="2"/>
+        </svg>
+      </div>
+      <div class="counter-content">
+        <span class="counter-number" data-target="500">0</span>
+        <span class="counter-plus">+</span>
+        <p class="counter-label">Clientes Felices</p>
+      </div>
+    </div>
+
+    <!-- Contador 3: Años de Experiencia -->
+    <div class="counter-item">
+      <div class="counter-icon">
+        <svg width="60" height="60" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" xmlns="http://www.w3.org/2000/svg">
+          <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+          <circle cx="12" cy="12" r="3" fill="currentColor"/>
+        </svg>
+      </div>
+      <div class="counter-content">
+        <span class="counter-number" data-target="5">0</span>
+        <span class="counter-plus"></span>
+        <p class="counter-label">Años de Experiencia</p>
+      </div>
+    </div>
+
+    <!-- Contador 4: Calificación -->
+    <div class="counter-item">
+      <div class="counter-icon">
+        <svg width="60" height="60" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+          <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+        </svg>
+      </div>
+      <div class="counter-content">
+        <span class="counter-number" data-target="4.9">0</span>
+        <span class="counter-plus"></span>
+        <p class="counter-label">Calificación</p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+  <!-- Sección de productos con tarjetas 3D -->
+<section class="productos">
+  <h2>Nuestro Menú Principal</h2>
+  <div class="productos-grid">
+
+    <!-- Tarjeta 1 -->
+    <div class="card-container">
+      <div class="card coffee-card">
+        <div class="card-background"></div>
+        <div class="card-content">
+          <h3 class="card-title">Tizana</h3>
+          <p class="card-subtitle">Intenso y aromático</p>
+          <img src="./img/tizana caliente.webp" alt="Café Americano" class="card-image" />
+          <p class="card-description">Una bebida deliciosa sin cafeina.</p>
+          <div class="card-actions">
+            <button class="btn-primary">
+              <span>Ordenar</span>
+              <span class="price-tag">$18</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Tarjeta 2 -->
+    <div class="card-container">
+      <div class="card coffee-card">
+        <div class="card-background"></div>
+        <div class="card-content">
+          <h3 class="card-title">Galletas de Chocolate</h3>
+          <p class="card-subtitle">Crujientes y Deliciosas</p>
+          <img src="./img/galletas de chocolate.jpg" alt="Latte Vainilla" class="card-image" />
+          <p class="card-description">El compañero perfecto para la bebida prefecta.</p>
+          <div class="card-actions">
+            <button class="btn-primary">
+              <span>Ordenar</span>
+              <span class="price-tag">$25</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Tarjeta 3 -->
+    <div class="card-container">
+      <div class="card coffee-card">
+        <div class="card-background"></div>
+        <div class="card-content">
+          <h3 class="card-title">Cappuccino</h3>
+          <p class="card-subtitle">Equilibrio perfecto</p>
+          <img src="https://images.unsplash.com/photo-1572442388796-11668a67e53d?q=80&w=800&auto=format&fit=crop" alt="Cappuccino" class="card-image" />
+          <p class="card-description">Cappuccino tradicional con espuma de leche perfecta y arte latte.</p>
+          <div class="card-actions">
+            <button class="btn-primary">
+              <span>Ordenar</span>
+              <span class="price-tag">$22</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Tarjeta 4 -->
+    <div class="card-container">
+      <div class="card coffee-card">
+        <div class="card-background"></div>
+        <div class="card-content">
+          <h3 class="card-title">Pay de Fresa</h3>
+          <p class="card-subtitle">Rico y Cremoso</p>
+          <img src="./img/pay de fresa.jpg" alt="Mocha Chocolate" class="card-image" />
+          <p class="card-description">La combinación perfecta para tu bebida.</p>
+          <div class="card-actions">
+            <button class="btn-primary">
+              <span>Ordenar</span>
+              <span class="price-tag">$28</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Tarjeta 5 -->
+    <div class="card-container">
+      <div class="card coffee-card">
+        <div class="card-background"></div>
+        <div class="card-content">
+          <h3 class="card-title">Espresso Doble</h3>
+          <p class="card-subtitle">Pura energía</p>
+          <img src="https://images.unsplash.com/photo-1510707577719-ae7c14805e3a?q=80&w=800&auto=format&fit=crop" alt="Espresso Doble" class="card-image" />
+          <p class="card-description">Doble shot de espresso para quienes necesitan energía extra en su día.</p>
+          <div class="card-actions">
+            <button class="btn-primary">
+              <span>Ordenar</span>
+              <span class="price-tag">$20</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Tarjeta 6 -->
+    <div class="card-container">
+      <div class="card coffee-card">
+        <div class="card-background"></div>
+        <div class="card-content">
+          <h3 class="card-title">Pizza</h3>
+          <p class="card-subtitle">Las mejores Pizzas caseras</p>
+          <img src="./img/pizza casera.png" alt="Frappé Caramelo" class="card-image" />
+          <p class="card-description">Convina perfercto con una bebida ya sea caliente o fria.</p>
+          <div class="card-actions">
+            <button class="btn-primary">
+              <span>Ordenar</span>
+              <span class="price-tag">$30</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Tarjeta 7 -->
+    <div class="card-container">
+      <div class="card coffee-card">
+        <div class="card-background"></div>
+        <div class="card-content">
+          <h3 class="card-title">Frappe Moka</h3>
+          <p class="card-subtitle">Cremoso y Dulce</p>
+          <img src="./img/frape moka.jpg" alt="Café de Olla" class="card-image" />
+          <p class="card-description">Ideal para el calorsito.</p>
+          <div class="card-actions">
+            <button class="btn-primary">
+              <span>Ordenar</span>
+              <span class="price-tag">$24</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Tarjeta 8 -->
+    <div class="card-container">
+      <div class="card coffee-card">
+        <div class="card-background"></div>
+        <div class="card-content">
+          <h3 class="card-title">Pay de Zarzamora</h3>
+          <p class="card-subtitle">Suave y Dulce</p>
+          <img src="./img/pay de zarzamora.webp" alt="Cold Brew" class="card-image" />
+          <p class="card-description">La Combinacion Perfecta como postre.</p>
+          <div class="card-actions">
+            <button class="btn-primary">
+              <span>Ordenar</span>
+              <span class="price-tag">$26</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Tarjeta 9 -->
+    <div class="card-container">
+      <div class="card coffee-card">
+        <div class="card-background"></div>
+        <div class="card-content">
+          <h3 class="card-title">Frappe de Oreo</h3>
+          <p class="card-subtitle">Bebida Fria y con Estilo</p>
+          <img src="./img/frape oreo.webp" alt="Chai Latte" class="card-image" />
+          <p class="card-description">La bebida perferca por ser fria dulce al mismo tiempo.</p>
+          <div class="card-actions">
+            <button class="btn-primary">
+              <span>Ordenar</span>
+              <span class="price-tag">$27</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+  <!-- Pie de página -->
+  <footer>
+    <p>&copy; 2025 Cafetería El Rincón. Todos los derechos reservados.</p>
+  </footer>
+
+  <!-- Enlace al archivo JavaScript -->
+  <script src="./js/carrusel.js"></script>
+  <script src="./js/cards.js"></script>
+  <script src="./js/counter.js"></script>
+</body>
+</html>

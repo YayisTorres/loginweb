@@ -1,0 +1,107 @@
+/* Estilos generales */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #fefcfb;
+  color: #333;
+}
+
+/* Encabezado */
+header {
+  background-color: #4e342e;
+  color: #fff;
+  padding: 15px;
+  text-align: center;
+}
+
+header h1 {
+  margin: 0;
+}
+
+nav {
+  margin-top: 10px;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 10px;
+  font-weight: bold;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+/* Carrusel */
+.carrusel {
+  position: relative;
+  max-width: 100%;
+  overflow: hidden;
+  margin: 20px 0;
+}
+
+.slider {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.slide {
+  min-width: 100%;
+  box-sizing: border-box;
+  position: relative;
+}
+
+.slide img {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+}
+
+.texto-slide {
+  position: absolute;
+  bottom: 30px;
+  left: 30px;
+  color: #fff;
+  background: rgba(0,0,0,0.5);
+  padding: 10px 20px;
+  border-radius: 10px;
+}
+
+.btn-prev, .btn-next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: #4e342e;
+  color: #fff;
+  border: none;
+  font-size: 30px;
+  padding: 5px 12px;
+  cursor: pointer;
+  border-radius: 50%;
+  z-index: 10;
+}
+
+.btn-prev { left: 10px; }
+.btn-next { right: 10px; }
+
+/* Productos */
+.productos {
+  text-align: center;
+  padding: 30px 10px;
+}
+
+.productos h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+  color: #4e342e;
+}
+
+/* Footer */
+footer {
+  background: #4e342e;
+  color: #fff;
+  text-align: center;
+  padding: 15px;
+  margin-top: 30px;
+}
