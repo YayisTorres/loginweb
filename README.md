@@ -1,4 +1,6 @@
 # ☕ Cafetería El Rincón - Sistema de Login
+ver Tambien en : 
+https://yayistorres.github.io/loginweb/
 
 
 ## 📌 Descripción del proyecto
@@ -120,16 +122,16 @@ login.html
 > Reemplaza estos enlaces por capturas reales de tu sistema en acción.
 
 ### ✅ Inicio exitoso
-![Inicio de sesión exitoso](https://via.placeholder.com/600x350.png?text=Inicio+exitoso+login)
+![Inicio de sesión exitoso](https://github.com/YayisTorres/loginweb/blob/main/imglo/parte%20inicio.png)
 
 ### ❌ Error de contraseña
-![Error de login](https://via.placeholder.com/600x350.png?text=Contraseña+incorrecta)
+![Error de login](https://github.com/YayisTorres/loginweb/blob/main/imglo/contrase%C3%B1a%20in%20correcta.png)
 
 ### 🔐 Medidor de seguridad de contraseña
-![Seguridad de contraseña](https://via.placeholder.com/600x350.png?text=Seguridad+de+contraseña)
+![Seguridad de contraseña](https://github.com/YayisTorres/loginweb/blob/main/imglo/contrase%C3%B1a%20correcta%20y%20segura.png)
 
-### 👁️ Mostrar/Ocultar contraseña
-![Mostrar/Ocultar contraseña](https://via.placeholder.com/600x350.png?text=Toggle+contraseña)
+### 👁️ Te Redirije a 
+![Pagina Principal](https://github.com/YayisTorres/loginweb/blob/main/imglo/pagina%20principal.png)
 
 ---
 ## 📌 Notas
@@ -144,5 +146,6 @@ login.html
 Autor: **Dayanira Torres Quiroz**  
 Desarrollado como parte del sistema de login para proyecto web de cafetería.
 Correo: **torresquirozdayanira@gmail.com**
+
 
 
