@@ -119,8 +119,6 @@ login.html
 
 ## 🖼️ Capturas de Pantalla
 
-> Reemplaza estos enlaces por capturas reales de tu sistema en acción.
-
 ### ✅ Inicio exitoso
 ![Inicio de sesión exitoso](https://github.com/YayisTorres/loginweb/blob/main/imglo/parte%20inicio.png)
 
