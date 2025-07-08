@@ -80,7 +80,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
         // Redirecciona después de 1 segundo
         setTimeout(() => {
-          window.location.href = window.location.origin + "./x.html";
+          window.location.href = window.location.origin + "/loginweb/x.html";
         }, 1000);
 
       } else {
